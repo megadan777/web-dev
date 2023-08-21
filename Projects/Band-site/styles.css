@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/BOOTEROZ.ttf") format("ttf");
+}
+
 * {
     box-sizing: border-box;
     font-family: Raleway;
@@ -26,6 +31,17 @@ html, body {
     text-decoration: none;
 }
 
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-vav li {
+    padding: 0 5%;
+}
+
 .nav a:hover {
     background-color: rgba(255, 255, 255, .3);
 }
@@ -36,4 +52,11 @@ html, body {
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: ;
 }
