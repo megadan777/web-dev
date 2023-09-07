@@ -29,6 +29,14 @@
         background-color: hsl(251, 77%, 90%);
       }
     </style>
+
+    <script>
+      const allCode = document.querySelectorAll("code");
+
+      for (let item of allCode) {
+        item.innerHTML = `&lt;${item.innerHTML}&gt;`;
+      }
+    </script>
   </head>
   <body>
     <main>
@@ -41,13 +49,5 @@
         </p>
       </div>
     </main>
-
-    <script>
-      const allCode = document.querySelectorAll("code");
-
-      for (let item of allCode) {
-        item.innerHTML = `&lt;${item.innerHTML}&gt;`;
-      }
-    </script>
   </body>
 </html>
