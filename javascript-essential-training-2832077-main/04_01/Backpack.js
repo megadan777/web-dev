@@ -3,6 +3,7 @@ class Backpack {
     name,
     volume,
     color,
+    Age,
     pocketNum,
     strapLengthL,
     strapLengthR,
@@ -12,6 +13,7 @@ class Backpack {
     this.name = name;
     this.volume = volume;
     this.color = color;
+    this.Age = Age;
     this.pocketNum = pocketNum;
     this.strapLength = {
       left: strapLengthL,
