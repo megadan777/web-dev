@@ -14,7 +14,7 @@ users.forEach(user => {
 
 function printUser(user) {
     if (user.age !=null) {
-console.log('User', ${user.name} 'will be', ${user.age + 5} 'years old in 5 years')
+console.log('User ${user.name} will be ${user.age + 5} years old in 5 years')
     } else {
         console.log('User is called ${user.name}')
     }
