@@ -5,7 +5,25 @@
         "name": "Album 1",
         "price": 1299,
         "imgName": "Album1.png"
-        }
+        },
+        {
+            "id": 2,
+            "name": "Album 2",
+            "price": 1499,
+            "imgName": "Album2.png"
+            },
+            {
+                "id": 1,
+                "name": "Album 1",
+                "price": 1299,
+                "imgName": "Album1.png"
+                },
+                {
+                    "id": 1,
+                    "name": "Album 1",
+                    "price": 1299,
+                    "imgName": "Album1.png"
+                    }                            
     ],
     "merch": [
 
