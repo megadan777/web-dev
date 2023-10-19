@@ -14,5 +14,6 @@ console.log(stripeSecretKey, stripePublicKey)
   app.set('view engine', 'ejs')
   app.use(express.static('public'))
   
+  app.get('/store')
 
   app.listen(3000)
