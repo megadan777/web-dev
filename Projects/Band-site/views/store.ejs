@@ -24,6 +24,7 @@
     <section class="container content-section">
         <h2 class="section-header">Music</h2>
         <div class="shop-items">
+            <% items.music.forEach(function (item){ %>
         <div class="shop-item">
                 <span class="shop-item-title">Album 1</span> 
             <img class="shop-item-image" src="./Images/Album 1.png" alt="Album 1 cover art">
@@ -32,6 +33,7 @@
                 <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
             </div>
         </div>
+        <% }) %>
         <div class="shop-item">
                 <span class="shop-item-title">Album 2</span>
             <img class="shop-item-image" src="./Images/Album 2.png" alt="Album 1 cover art">
