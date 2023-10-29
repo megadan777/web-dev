@@ -25,66 +25,31 @@
         <h2 class="section-header">Music</h2>
         <div class="shop-items">
             <% items.music.forEach(function (item){ %>
-        <div class="shop-item">
-                <span class="shop-item-title">Album 1</span> 
-            <img class="shop-item-image" src="./Images/Album 1.png" alt="Album 1 cover art">
+        <div class="shop-item" data-item-id="<%= item.id %>">
+                <span class="shop-item-title"><%= item.name %></span> 
+            <img class="shop-item-image" src="./Images/<%= item.imgName %>" alt="Album 1 cover art">
             <div class="shop-item-detail">
-                <span class="shop-item-price">$12.99</span>
+                <span class="shop-item-price"><%= item.PRICE / 100 %></span>
                 <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
             </div>
         </div>
         <% }) %>
-        <div class="shop-item">
-                <span class="shop-item-title">Album 2</span>
-            <img class="shop-item-image" src="./Images/Album 2.png" alt="Album 1 cover art">
-            <div class="shop-item-detail">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
-            </div>
-        </div>
-        <div class="shop-item">
-                <span class="shop-item-title">Album 3</span>
-            <img class="shop-item-image" src="./Images/Album 3.png" alt="Album 1 cover art">
-            <div class="shop-item-detail">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
-            </div>
-        </div>
-        <div class="shop-item">
-                <span class="shop-item-title">Album 4</span>
-            <img class="shop-item-image" src="./Images/Album 4.png" alt="Album 1 cover art">
-            <div class="shop-item-detail">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
-            </div>
-        </div>
-        </div>
+
     </section>
 
     <section class="container content-section">
         <h2 class="section-header">Merch</h2>
         <div class="shop-items">
-        <div>
-            <div>
-                <span class="shop-item-title">T-Shirt</span>
-            </div>
-            <img class="shop-item-image" src="./Images/Shirt.png" alt="T shirt">
-            <div>
-                <span class="shop-item-price">$29.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <span class="shop-item-title">Coffee Mug</span>
-            </div>
-            <img class="shop-item-image" src="./Images/coffee-34251_640.png" alt="Coffee Mug">
-            <div>
-                <span class="shop-item-price">$9.99</span>
-                <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
-            </div>
-        </div>
-        </div>
+            <% items.Merch.forEach(function (item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                        <span class="shop-item-title"><%= item.name %></span> 
+                    <img class="shop-item-image" src="./Images/<%= item.imgName %>" alt="Album 1 cover art">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price"><%= item.PRICE / 100 %></span>
+                        <button class="btn btn-primary shop-item-button" role="button">Add to Cart</button>
+                    </div>
+                </div>
+                <% }) %>
     </section>
 
     <section class="container content-section">
