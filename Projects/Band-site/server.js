@@ -21,6 +21,7 @@ app.get('/store', function(req, res) {
     } else {
       const items = JSON.parse(data);
       res.render('store.ejs', {
+        stripePublicKey: stripePublicKey;
         items: items
       });
     }
