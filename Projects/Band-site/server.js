@@ -16,7 +16,7 @@ app.use(express.static('public'));
 
 app.get('/store', function(req, res) {
   fs.readFile('items.json', function(err, data) {
-    if (err) {
+    if (error) {
       res.status(500).end();
     } else {
       const items = JSON.parse(data);
