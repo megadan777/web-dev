@@ -32,9 +32,9 @@ var stripeHandler = StripeCheckout.configure({
     token: function(token) {
         var items = []
         var cartItemContainer = document.getElementsByClassName('cart-items')[0]
-        var carRows = cartItemContainer.getElementsByClassName9('cart-row')
+        var cartRows = cartItemContainer.getElementsByClassName9('cart-row')
         for (var i = 0; i < carRows.length; i++) {
-            var carRow = cartRows[i]
+            var cartRow = cartRows[i]
             var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
             var quantity = quantityElement.valuevar id = cartRow.dataset.itemId
             items.push({
@@ -52,6 +52,10 @@ var stripeHandler = StripeCheckout.configure({
             stripeTokenId: token.id,
             items: items
            })
+        }).then(function(res) {
+            return res.json()
+        }).then(function(data) {
+            alert(data.message)
         })
         
     }
