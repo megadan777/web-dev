@@ -1,0 +1,13 @@
+{
+    "name": "Dan",
+    "favoriteColor": "blue",
+    //Boolean below
+    "isProgrammer": true,
+    "hobbies": ["Reading", "travel", "family"],
+    "friends": [{
+        "name": "Amanda",
+        "favoriteColor": "green",
+        "isProgrammer": false,
+        "friends": [...]
+    }]
+}
